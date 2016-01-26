@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PartyCanon_Example', :exclusive => true do
+  pod 'PartyCanon', :path => '../'
+end
+
+target 'PartyCanon_Tests', :exclusive => true do
+  pod 'PartyCanon', :path => '../'
+
+  
+end

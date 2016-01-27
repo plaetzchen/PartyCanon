@@ -149,7 +149,7 @@
     
     //velocity
     emitterCell.velocity = self.velocity;
-    emitterCell.velocityRange = 40;
+    emitterCell.velocityRange = floorf(self.velocity/10);
     
     //Alpha
     emitterCell.alphaSpeed = 4.5;

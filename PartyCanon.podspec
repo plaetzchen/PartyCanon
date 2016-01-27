@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/plaetzchen/PartyCanon"
-  s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "http://pltzchn.de/party_canon_2.png", "http://pltzchn.de/party_canon_2.png"
   s.license          = 'MIT'
   s.author           = { "Philip Brechler" => "pbrechler@mac.com" }
   s.source           = { :git => "https://github.com/plaetzchen/PartyCanon.git", :tag => s.version.to_s }

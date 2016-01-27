@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- Add some party canon to your view. Add this view as the top one to your viewcontroller, set the location and target and the let the canon explode!.
+ Add some party cannon to your view. Add this view as the top one to your viewcontroller, set the location and target and the let the cannon explode!.
  */
 @interface PartyCanonView : UIView
 

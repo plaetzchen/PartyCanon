@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        Party canon adds a fine tuneds CoreAnimation particle emitter to your screen and let you shoot confetti over your screen when your user does something special of for the first time. A great way to reward your user.
+                        PartyCanon adds a fine tuneds CoreAnimation particle emitter to your screen and let you shoot confetti over your screen when your user does something special of for the first time. A great way to reward your user.
                        DESC
 
   s.homepage         = "https://github.com/plaetzchen/PartyCanon"

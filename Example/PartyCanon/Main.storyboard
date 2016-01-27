@@ -1,27 +1,139 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yzy-Ke-0ib">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--Navigation Controller-->
+        <scene sceneID="9PC-gF-a6P">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="PBViewController" sceneMemberID="viewController">
+                <navigationController id="Yzy-Ke-0ib" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gIa-8K-aRt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pmo-52-Kqn" kind="relationship" relationship="rootViewController" id="H0G-ws-myl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNv-jW-j9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616" y="789"/>
+        </scene>
+        <!--Party Canon-->
+        <scene sceneID="uC5-9u-2YQ">
+            <objects>
+                <viewController title="Party Canon" id="pmo-52-Kqn" customClass="PBViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="qRA-HF-Rdy"/>
+                        <viewControllerLayoutGuide type="bottom" id="A7F-mh-gZi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                    <view key="view" contentMode="scaleToFill" id="Qnn-x1-qaJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pys-yc-Rbv">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Press me"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="pmo-52-Kqn" eventType="touchUpInside" id="MjK-Zf-1iU"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="500" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="uT4-XT-QPZ">
+                                <rect key="frame" x="241" y="346" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="gds-5r-qgN"/>
+                                    <constraint firstAttribute="height" constant="30" id="lBb-7j-Ek9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="amountSliderChanged:" destination="pmo-52-Kqn" eventType="valueChanged" id="GKp-7F-TOq"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="g9q-57-xdO">
+                                <rect key="frame" x="241" y="414" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="3o5-tl-8pt"/>
+                                    <constraint firstAttribute="height" constant="30" id="cnE-Ha-yxK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="velocitySliderChanged:" destination="pmo-52-Kqn" eventType="valueChanged" id="odE-ms-oEc"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-DA-UNg">
+                                <rect key="frame" x="270" y="384" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="F5Y-wn-XoV"/>
+                                    <constraint firstAttribute="height" constant="21" id="M3S-wh-S1g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjm-sr-bQZ">
+                                <rect key="frame" x="269" y="452" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="6UI-oZ-K8A"/>
+                                    <constraint firstAttribute="height" constant="21" id="AQv-CQ-LHS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-bZ-OHj">
+                                <rect key="frame" x="363" y="481" width="51" height="31"/>
+                                <connections>
+                                    <action selector="customImageToggle:" destination="pmo-52-Kqn" eventType="valueChanged" id="iBd-In-0V1"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFH-W5-EJQ">
+                                <rect key="frame" x="244" y="485" width="111" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="cNe-vq-iBh"/>
+                                    <constraint firstAttribute="height" constant="21" id="dDZ-Zw-Quv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF0-3p-0aW" customClass="PartyCanonView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uT4-XT-QPZ" firstAttribute="top" secondItem="Pys-yc-Rbv" secondAttribute="bottom" constant="31" id="1nq-I3-QJ6"/>
+                            <constraint firstItem="Yjm-sr-bQZ" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="2nh-iM-5KD"/>
+                            <constraint firstItem="A7F-mh-gZi" firstAttribute="top" secondItem="bF0-3p-0aW" secondAttribute="bottom" id="3UD-TB-vw1"/>
+                            <constraint firstItem="2oe-DA-UNg" firstAttribute="top" secondItem="uT4-XT-QPZ" secondAttribute="bottom" constant="8" id="3Xj-DM-0CZ"/>
+                            <constraint firstItem="CFH-W5-EJQ" firstAttribute="top" secondItem="Yjm-sr-bQZ" secondAttribute="bottom" constant="12" id="7vr-X5-KE2"/>
+                            <constraint firstItem="bF0-3p-0aW" firstAttribute="top" secondItem="qRA-HF-Rdy" secondAttribute="bottom" id="BSn-9p-Lku"/>
+                            <constraint firstItem="bF0-3p-0aW" firstAttribute="leading" secondItem="Qnn-x1-qaJ" secondAttribute="leading" id="Ccd-Xb-kiw"/>
+                            <constraint firstItem="Pys-yc-Rbv" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="Gce-V8-cC6"/>
+                            <constraint firstItem="uT4-XT-QPZ" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="Hbe-WV-FuV"/>
+                            <constraint firstAttribute="trailing" secondItem="bF0-3p-0aW" secondAttribute="trailing" id="IbR-vc-Vt1"/>
+                            <constraint firstItem="2oe-DA-UNg" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="Ltj-oj-Oms"/>
+                            <constraint firstItem="WNH-bZ-OHj" firstAttribute="top" secondItem="CFH-W5-EJQ" secondAttribute="top" constant="-4" id="Of3-ce-n7w"/>
+                            <constraint firstItem="CFH-W5-EJQ" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="Yyf-Ge-gsm"/>
+                            <constraint firstItem="g9q-57-xdO" firstAttribute="top" secondItem="2oe-DA-UNg" secondAttribute="bottom" constant="9" id="e9U-ix-tOH"/>
+                            <constraint firstItem="g9q-57-xdO" firstAttribute="centerX" secondItem="Qnn-x1-qaJ" secondAttribute="centerX" id="lpK-oa-EJ9"/>
+                            <constraint firstItem="Pys-yc-Rbv" firstAttribute="centerY" secondItem="Qnn-x1-qaJ" secondAttribute="centerY" id="oGC-v0-WJV"/>
+                            <constraint firstItem="Yjm-sr-bQZ" firstAttribute="top" secondItem="g9q-57-xdO" secondAttribute="bottom" constant="8" id="uKB-YO-Pmd"/>
+                            <constraint firstItem="WNH-bZ-OHj" firstAttribute="leading" secondItem="CFH-W5-EJQ" secondAttribute="trailing" constant="8" id="whJ-dj-Sm3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PRm-xB-5bQ"/>
+                    <connections>
+                        <outlet property="partyCanon" destination="bF0-3p-0aW" id="oeV-wc-4oj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7O-z0-FPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="164" y="788"/>
         </scene>
     </scenes>
 </document>

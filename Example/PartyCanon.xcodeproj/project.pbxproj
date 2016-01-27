@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8E5F6A69DA4306B6EA33A47D /* Pods_PartyCanon_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B9132F0D618666201B2D66 /* Pods_PartyCanon_Tests.framework */; };
+		B43AB2611C58CFA5000BEF50 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43AB2601C58CFA5000BEF50 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A21F0C23BC829059499124BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B3DF3BC3E7E16296F5293F42 /* PartyCanon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PartyCanon.podspec; path = ../PartyCanon.podspec; sourceTree = "<group>"; };
+		B43AB2601C58CFA5000BEF50 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DB520A2AAD47946420FA1EC0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA34CA5660A162906054427C /* Pods-PartyCanon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyCanon_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyCanon_Tests/Pods-PartyCanon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				6003F59C195388D20070C39A /* PBAppDelegate.h */,
 				6003F59D195388D20070C39A /* PBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				B43AB2601C58CFA5000BEF50 /* Launch Screen.storyboard */,
 				6003F5A5195388D20070C39A /* PBViewController.h */,
 				6003F5A6195388D20070C39A /* PBViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				B43AB2611C58CFA5000BEF50 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +516,6 @@
 			baseConfigurationReference = 6B7A7F8113A34F1E520436D3 /* Pods-PartyCanon_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyCanon/PartyCanon-Prefix.pch";
 				INFOPLIST_FILE = "PartyCanon/PartyCanon-Info.plist";
@@ -528,7 +531,6 @@
 			baseConfigurationReference = 1DC246B9CE5105A0AA2A263D /* Pods-PartyCanon_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartyCanon/PartyCanon-Prefix.pch";
 				INFOPLIST_FILE = "PartyCanon/PartyCanon-Info.plist";

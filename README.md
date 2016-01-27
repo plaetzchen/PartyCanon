@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Just CoreAnimation. No other dependecies.
+
 ## Installation
 
 PartyCanon is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod "PartyCanon"
 
 ## Author
 
-Philip Brechler, pbrechler@team.mobile.de
+Philip Brechler
 
 ## License
 

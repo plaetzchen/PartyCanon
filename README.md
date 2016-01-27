@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/PartyCanon.svg?style=flat)](http://cocoapods.org/pods/PartyCanon)
 [![Platform](https://img.shields.io/cocoapods/p/PartyCanon.svg?style=flat)](http://cocoapods.org/pods/PartyCanon)
 
+## Screenshots
+
+![](screenshots/party_canon_1.png?raw=true)
+![](screenshots/party_canon_2.png?raw=true)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
